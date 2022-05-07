@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: 🍳 Build docs on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    name: 🍳 Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install
 
-      - name: 🎉 Build docs
+      - name: 🎉 Build
         run: |
           npm run build
       

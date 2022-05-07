@@ -24,9 +24,12 @@ defineProps<{
 
 <style>
 .card {
-  background-image: linear-gradient( 135deg, #FFF886 10%, #F072B6 100%);
+  /* background-image: linear-gradient( 152deg, #8b81fe 10%, #bea4ff 100%); */
+  background-color: white;
   height: 150px;
   width: 300px;
+  color: #000;
+  border: 1px solid #000;
   border-radius: 10px;
   margin-left: 10px;
   margin-top: 10px;
@@ -69,7 +72,9 @@ defineProps<{
 .card:hover {
   transform: scale(1.2);
   transition: all 0.4s ease-in-out 0s;
-  background-image: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+  /* background-image: linear-gradient( 152deg, #bea4ff 10%, #8b81fe 100%); */
   z-index: 9999;
+  color: #007acc;
+  border: 1px solid #007acc;
 }
 </style>
