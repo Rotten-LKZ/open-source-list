@@ -23,6 +23,87 @@
       },
       "link": "https://open.lkzstudio.com/",
       "github": "https://github.com/Rotten-LKZ/open-source-list"
+    },
+    {
+      "title": {
+        "zh": "表格生成器",
+        "en": "Table generator"
+      },
+      "intro": {
+        "zh": "简单的表格生成器",
+        "en": "An easy table generator"
+      },
+      "link": "https://github.com/Rotten-LKZ/table-generator/",
+      "github": "https://github.com/Rotten-LKZ/table-generator"
+    },
+    {
+      "title": {
+        "zh": "时间表",
+        "en": "Timeline"
+      },
+      "intro": {
+        "zh": "时间表网页",
+        "en": "A timeline generator"
+      },
+      "link": "https://github.com/Rotten-LKZ/timeline/",
+      "github": "https://github.com/Rotten-LKZ/timeline"
+    },
+    {
+      "title": {
+        "zh": "最终冲刺",
+        "en": "Final sprint"
+      },
+      "intro": {
+        "zh": "网页倒计时（中二病作品）",
+        "en": "A countdown timer (an idea from Chuunibyou)"
+      },
+      "link": "https://goal.lkzstudio.com/",
+      "github": "https://github.com/Rotten-LKZ/final-sprint"
+    },
+    {
+      "title": "ConciseDb",
+      "intro": {
+        "zh": "为 Node.js 制作的储存 JSON 文件的数据库依赖库",
+        "en": "A database library stores JSON file for Node.js."
+      },
+      "link": "https://www.concisedb.top/",
+      "github": "https://github.com/Rotten-LKZ/concisedb"
+    },
+    {
+      "title": {
+        "zh": "答题卡作文图片生成器",
+        "en": "Answer card image generator"
+      },
+      "intro": {
+        "zh": "生成答题卡图片的作文图片生成器",
+        "en": "A generator for answer card images"
+      },
+      "link": "https://github.com/Rotten-LKZ/article-image-generator",
+      "github": "https://github.com/Rotten-LKZ/article-image-generator"
+    },
+    {
+      "title": {
+        "zh": "班级助手(C# 版本)",
+        "en": "Class helper(C# Version)"
+      },
+      "intro": {
+        "zh": "一个帮助教师教学的工具，可以安装在课堂上的计算机上",
+        "en": "A tool helps teachers teach, which can be installed in the computer in the class"
+      },
+      "link": "https://github.com/Rotten-LKZ/class-helper-c-sharp",
+      "github": "https://github.com/Rotten-LKZ/class-helper-c-sharp"
+    },
+    {
+      "title": {
+        "zh": "班级助手(Electron 版本)",
+        "en": "Class helper(Electron Version)"
+      },
+      "intro": {
+        "zh": "一个帮助教师教学的工具，可以安装在课堂上的计算机上",
+        "en": "A tool helps teachers teach, which can be installed in the computer in the class"
+      },
+      "link": "https://github.com/Rotten-LKZ/class-helper",
+      "github": "https://github.com/Rotten-LKZ/class-helper"
     }
   ]
 }

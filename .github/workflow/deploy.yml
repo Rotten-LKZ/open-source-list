@@ -1,0 +1,47 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: 🍳 Build docs on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node_version: [16.x]
+
+    steps:
+      - name: 🤔 Checkout
+        uses: actions/checkout@v2
+      
+      - name: 🚚 Install dependencies
+        run: |
+          npm install
+
+      - name: 🎉 Build docs
+        run: |
+          npm run docs
+      
+      - name: ✨ Create SSH
+        env:
+          ID_RSA: ${{ secrets.ID_RSA }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$ID_RSA" >> ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: 📂 Commit & Push
+        run: |
+          git config --global user.name "Rotten-LKZ"
+          git config --global user.email "Rotten_LKZ@163.com"
+          git clone git@github.com:Rotten-LKZ/open.lkzstudio.com.git
+          cp -r ./dist/* ./open.lkzstudio.com
+          cd ./open.lkzstudio.com
+          git add .
+          git commit -m "home page update[bot]" -a
+          git push
