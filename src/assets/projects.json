@@ -1,0 +1,28 @@
+{
+  "transTitle": {
+    "zh": "切换成中文",
+    "en": "Toggle English"
+  },
+  "title": {
+    "zh": "开源",
+    "en": "Open source"
+  },
+  "intro": {
+    "zh": "LKZ 烂裤子的开源项目列表",
+    "en": "RotCool's open source project list"
+  },
+  "projects": [
+    {
+      "title": {
+        "zh": "开源项目列表",
+        "en": "Open source project list"
+      },
+      "intro": {
+        "zh": "LKZ 烂裤子的开源项目列表（没错，本项目就是开源的）",
+        "en": "RotCool's open source project list (this project is open source)"
+      },
+      "link": "https://open.lkzstudio.com/",
+      "github": "https://github.com/Rotten-LKZ/open-source-list"
+    }
+  ]
+}
