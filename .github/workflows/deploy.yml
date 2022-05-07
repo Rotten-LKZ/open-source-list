@@ -24,7 +24,7 @@ jobs:
 
       - name: 🎉 Build docs
         run: |
-          npm run docs
+          npm run build
       
       - name: ✨ Create SSH
         env:
