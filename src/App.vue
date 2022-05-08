@@ -4,15 +4,31 @@ import Card from './components/Card.vue';
 import { ref, watch } from 'vue';
 import projects from './assets/projects.json';
 
-const isEnglish = ref(false);
+const isEnglish = ref(getDefaultLangWhetherEnglish());
 
 watch(isEnglish, value => {
   document.title = value ? "RotCool's open source project list" : "LKZ 烂裤子的开源项目列表"
   document.documentElement.setAttribute('lang', value ? 'en' : 'zh');
-});
+}, { immediate: true });
+
+function getDefaultLangWhetherEnglish(): boolean {
+  if (window.location.search.includes('lang=en')) {
+    return true;
+  } else if (window.location.search.includes('lang=zh')) {
+    return false;
+  }
+
+  if (document.cookie.includes('lang=en')) {
+    return true;
+  } else if (document.cookie.includes('lang=zh')) {
+    return false;
+  }
+  return false;
+}
 
 function toggleLang() {
   isEnglish.value = !isEnglish.value;
+  document.cookie = `lang=${isEnglish.value ? 'en' : 'zh'}; expires=${new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toUTCString()}`;
 }
 
 function getTrans(key: string, con?: any): string {
