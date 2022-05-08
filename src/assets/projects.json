@@ -26,6 +26,18 @@
     },
     {
       "title": {
+        "zh": "背诵助手",
+        "en": "Recite helper"
+      },
+      "intro": {
+        "zh": "帮你背东西的工具",
+        "en": "A tool help you recite things"
+      },
+      "link": "https://github.com/Rotten-LKZ/recite-helper",
+      "github": "https://github.com/Rotten-LKZ/recite-helper"
+    },
+    {
+      "title": {
         "zh": "表格生成器",
         "en": "Table generator"
       },
