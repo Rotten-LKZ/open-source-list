@@ -38,6 +38,18 @@
     },
     {
       "title": {
+        "zh": "番剧管理器",
+        "en": "Bangumi manager"
+      },
+      "intro": {
+        "zh": "管理 ACGN 作品的项目",
+        "en": "A project aims to manage your ACGN works."
+      },
+      "link": "https://github.com/Rotten-LKZ/bangumi-manager",
+      "github": "https://github.com/Rotten-LKZ/bangumi-manager"
+    },
+    {
+      "title": {
         "zh": "表格生成器",
         "en": "Table generator"
       },
